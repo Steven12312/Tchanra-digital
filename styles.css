@@ -162,18 +162,21 @@ img{ max-width:100%; display:block; }
 }
 
 /* Hero Video Styles */
-.hero__media .mediaCard{
+.hero__media .mediaCard {
+  max-width: 500px;    /* Begrenzt die maximale Breite des Videos */
+  margin-left: auto;   /* Schiebt das Video nach rechts (weg vom Text) */
+  margin-right: auto;
   background: #000;
   border: 1px solid rgba(229,231,235,.9);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
 }
 
 .hero__video {
   width: 100%;
-  height: 380px; /* Leicht erhöht für bessere Wirkung */
+  height: 300px;       /* Reduzierte Höhe für eine kompaktere Optik */
   object-fit: cover;
   display: block;
 }
@@ -253,4 +256,13 @@ img{ max-width:100%; display:block; }
 }
 @media (max-width: 640px){
   .cards{ grid-template-columns: 1fr; }
+}
+@media (max-width: 980px) {
+  .hero__media .mediaCard {
+    max-width: 100%;   /* Auf dem Handy darf es wieder die volle Breite nutzen */
+    margin-top: 20px;
+  }
+  .hero__video {
+    height: 220px;     /* Noch flacher auf dem Smartphone */
+  }
 }
