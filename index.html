@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tchanra Digital – Websites & Betreuung</title>
+
   <meta name="description" content="Tchanra Digital erstellt moderne Websites für lokale Unternehmen – inklusive Betreuung, Updates und Support." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header" id="top">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Zur Startseite">
@@ -41,7 +43,26 @@
   </header>
 
   <main>
-    <section class="hero">
+    <!-- Hero -->
+    <section class="hero" aria-label="Startbereich">
+      <!-- Video Background -->
+      <div class="hero__videoWrap" aria-hidden="true">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="./assets/hero-poster.jpg"
+        >
+          <source src="./assets/hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Overlay -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
       <div class="container hero__grid">
         <div class="hero__content">
           <div class="badge">Websites für lokale Unternehmen</div>
@@ -63,33 +84,37 @@
           </ul>
         </div>
 
-        <div class="hero__media" aria-label="Titelbild">
+        <!-- Optional: rechte Seite als „Preview Card“ statt Video (Video ist ja schon Background) -->
+        <div class="hero__media" aria-label="Kurze Vorschau">
           <div class="mediaCard">
-            <video 
-              src="./assets/hero.mp4" 
-              autoplay 
-              loop 
-              muted 
-              playsinline 
-              class="hero__video">
-            </video>
-            <div class="mediaCard__hint">
-              <div class="dot"></div>
-              <span>Live Development Preview</span>
+            <div class="mediaCard__content">
+              <div class="pill">Schnellstart</div>
+              <h3>In wenigen Tagen online</h3>
+              <p>Du bekommst eine klare Website, die Kunden schnell zu dir bringt – inkl. Betreuung.</p>
+
+              <div class="mediaCard__list">
+                <div class="miniLine"><span>✅</span><span>WhatsApp / Call-to-Action</span></div>
+                <div class="miniLine"><span>✅</span><span>SSL/HTTPS Setup</span></div>
+                <div class="miniLine"><span>✅</span><span>Updates & kleine Änderungen</span></div>
+              </div>
+
+              <p class="fine">
+                Datei fürs Video: <code>assets/hero.mp4</code> (Optional Poster: <code>assets/hero-poster.jpg</code>)
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
+    <!-- Leistungen -->
     <section class="section" id="leistungen">
       <div class="container">
         <div class="section__head">
           <h2>Leistungen</h2>
           <p>Alles, was du brauchst – ohne Chaos. Sauber umgesetzt und verständlich betreut.</p>
         </div>
+
         <div class="cards">
           <article class="card">
             <h3>Website-Erstellung</h3>
@@ -100,6 +125,7 @@
               <li>Call-to-Action (Anruf/WhatsApp)</li>
             </ul>
           </article>
+
           <article class="card">
             <h3>Technik & Einrichtung</h3>
             <p>Domain, Hosting, SSL, E-Mail – ich richte es sauber ein und erkläre es verständlich.</p>
@@ -109,6 +135,7 @@
               <li>Datenschutz-Hinweise einpflegen</li>
             </ul>
           </article>
+
           <article class="card">
             <h3>Wartung & Betreuung</h3>
             <p>Damit es stabil bleibt: Updates, Backups, kleine Änderungen und schneller Support.</p>
@@ -118,6 +145,7 @@
               <li>Änderungen nach Bedarf</li>
             </ul>
           </article>
+
           <article class="card">
             <h3>Kontakt & Anfragen</h3>
             <p>Der wichtigste Punkt: Kunden sollen dich schnell erreichen.</p>
@@ -131,7 +159,203 @@
       </div>
     </section>
 
-    </main>
+    <!-- Ablauf -->
+    <section class="section section--alt" id="ablauf">
+      <div class="container">
+        <div class="section__head">
+          <h2>So läuft’s ab</h2>
+          <p>Ein klarer Prozess – damit du schnell online bist.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div>
+              <h3>Kurzes Gespräch</h3>
+              <p>Ziel, Inhalte, Beispiele – wir klären alles in 10–20 Minuten.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__num">2</div>
+            <div>
+              <h3>Umsetzung</h3>
+              <p>Design, Texte, Struktur, Technik – ich baue die Website sauber auf.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__num">3</div>
+            <div>
+              <h3>Live & Betreuung</h3>
+              <p>Website geht online. Danach Pflege/Updates/Änderungen – zuverlässig.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referenzen -->
+    <section class="section" id="referenzen">
+      <div class="container">
+        <div class="section__head">
+          <h2>Referenzen</h2>
+          <p>Ein Beispielprojekt – so sieht meine Arbeit aus.</p>
+        </div>
+
+        <div class="ref">
+          <div class="ref__media">
+            <img src="./assets/taxi-tchanra.jpg" alt="Screenshot – Taxi Tchanra Website" loading="lazy" decoding="async" />
+          </div>
+
+          <div class="ref__content">
+            <div class="pill">Projekt</div>
+            <h3>Taxi Tchanra</h3>
+            <p>
+              Website für ein Taxiunternehmen – Fokus auf schnelle Kontaktaufnahme, klare Struktur und mobile Nutzung.
+            </p>
+
+            <div class="ref__grid">
+              <div class="mini">
+                <div class="mini__title">Branche</div>
+                <div class="mini__value">Taxi / Dienstleistung</div>
+              </div>
+              <div class="mini">
+                <div class="mini__title">Leistung</div>
+                <div class="mini__value">Website + Einrichtung</div>
+              </div>
+              <div class="mini">
+                <div class="mini__title">Fokus</div>
+                <div class="mini__value">Anfragen & Vertrauen</div>
+              </div>
+              <div class="mini">
+                <div class="mini__title">Geräte</div>
+                <div class="mini__value">Mobile first</div>
+              </div>
+            </div>
+
+            <div class="ref__actions">
+              <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Website öffnen</a>
+              <a class="btn btn--ghost" href="#kontakt">Ähnliches Projekt anfragen</a>
+            </div>
+
+            <p class="fine">
+              Hinweis: Wenn du den Screenshot noch nicht hast, lege ein Bild unter <code>assets/taxi-tchanra.jpg</code> ab.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Über mich -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="about">
+          <div>
+            <h2>Über Tchanra Digital</h2>
+            <p>
+              Ich helfe lokalen Unternehmen dabei, online professionell aufzutreten – ohne Technikstress.
+              Du bekommst eine saubere Website und einen festen Ansprechpartner für Betreuung & Updates.
+            </p>
+            <ul class="about__list">
+              <li>✅ Klar & ehrlich beraten</li>
+              <li>✅ Schnelle Umsetzung</li>
+              <li>✅ Fokus auf Ergebnisse (Anfragen)</li>
+            </ul>
+          </div>
+
+          <div class="about__box">
+            <h3>Für wen ist das?</h3>
+            <p>Ideal für:</p>
+            <ul>
+              <li>Taxi- & Fahrdienste</li>
+              <li>Gastronomie</li>
+              <li>Handwerk / lokale Dienstleister</li>
+              <li>Kleine Unternehmen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Kontakt</h2>
+          <p>Schreib kurz, was du brauchst. Ich melde mich schnell zurück.</p>
+        </div>
+
+        <div class="contact">
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Dein Name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" placeholder="name@email.de" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="5" placeholder="Kurz erklären, was du brauchst…" required></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Anfrage senden</button>
+            <p class="fine" id="formHint">
+              Das Formular öffnet eine E-Mail (mailto). Wenn du ein echtes Kontaktformular willst (ohne Mail-Programm),
+              sag Bescheid – dann baue ich dir eine einfache Lösung ein.
+            </p>
+          </form>
+
+          <div class="contact__box">
+            <h3>Direkt per WhatsApp</h3>
+            <p>Am schnellsten geht’s über WhatsApp.</p>
+
+            <a class="btn btn--ghost btn--full" id="waBtn"
+               href="https://wa.me/4915000000000?text=Hi%20Tchanra%20Digital%2C%20ich%20habe%20eine%20Anfrage."
+               target="_blank" rel="noopener">
+              WhatsApp öffnen
+            </a>
+
+            <div class="contact__mini">
+              <div class="miniLine">
+                <span>Telefon</span>
+                <a href="tel:+4915000000000">+49 150 00000000</a>
+              </div>
+              <div class="miniLine">
+                <span>E-Mail</span>
+                <a href="mailto:info@tchanra-digital.de">info@tchanra-digital.de</a>
+              </div>
+            </div>
+
+            <p class="fine">
+              Trage hier deine echte Nummer/E-Mail ein (oben im Code).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a class="floatWA"
+       href="https://wa.me/4915000000000?text=Hi%20Tchanra%20Digital%2C%20ich%20habe%20eine%20Anfrage."
+       target="_blank" rel="noopener" aria-label="WhatsApp öffnen">
+      WhatsApp
+    </a>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Tchanra Digital</div>
+        <div class="footer__links">
+          <a href="#" aria-label="Impressum">Impressum</a>
+          <a href="#" aria-label="Datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+  </main>
 
   <script src="./script.js"></script>
 </body>
