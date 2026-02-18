@@ -231,4 +231,109 @@
           <div class="about__text">
             <h2>Über Tchanra Digital</h2>
             <p>
-              Ich helfe lokalen Unternehmen dabei, online professionel
+              Ich helfe lokalen Unternehmen dabei, online professionell aufzutreten – ohne Technikstress.
+              Du bekommst eine saubere Website und einen festen Ansprechpartner für Betreuung & Updates.
+            </p>
+
+            <div class="about__bullets">
+              <div class="bullet">✅ Klar & ehrlich beraten</div>
+              <div class="bullet">✅ Schnelle Umsetzung</div>
+              <div class="bullet">✅ Fokus auf Ergebnisse (Anfragen)</div>
+            </div>
+          </div>
+
+          <div class="about__box">
+            <h3>Für wen ist das?</h3>
+            <p>Ideal für:</p>
+            <ul>
+              <li>Taxi- & Fahrdienste</li>
+              <li>Gastronomie</li>
+              <li>Handwerk / lokale Dienstleister</li>
+              <li>Kleine Unternehmen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Kontakt</h2>
+          <p>Schreib kurz, was du brauchst. Ich melde mich schnell zurück.</p>
+        </div>
+
+        <div class="contact">
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Dein Name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" placeholder="name@email.de" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="5" placeholder="Kurz erklären, was du brauchst…" required></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Anfrage senden</button>
+
+            <p class="fine">
+              Das Formular öffnet eine E-Mail (mailto). Wenn du ein echtes Formular willst (ohne Mailprogramm),
+              sag Bescheid – dann baue ich dir eins ein.
+            </p>
+          </form>
+
+          <div class="contact__box">
+            <h3>Direkt per WhatsApp</h3>
+            <p>Am schnellsten geht’s über WhatsApp.</p>
+
+            <a class="btn btn--ghost btn--full" id="waBtn"
+              href="https://wa.me/4915000000000?text=Hi%20Tchanra%20Digital%2C%20ich%20habe%20eine%20Anfrage."
+              target="_blank" rel="noopener">
+              WhatsApp öffnen
+            </a>
+
+            <div class="contact__mini">
+              <div class="miniLine">
+                <span>Telefon</span>
+                <a href="tel:+4915000000000">+49 150 00000000</a>
+              </div>
+              <div class="miniLine">
+                <span>E-Mail</span>
+                <a href="mailto:info@tchanra-digital.de">info@tchanra-digital.de</a>
+              </div>
+            </div>
+
+            <p class="fine">Trage hier deine echte Nummer/E-Mail ein.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a class="floatWA"
+      href="https://wa.me/4915000000000?text=Hi%20Tchanra%20Digital%2C%20ich%20habe%20eine%20Anfrage."
+      target="_blank" rel="noopener" aria-label="WhatsApp öffnen">
+      WhatsApp
+    </a>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Tchanra Digital</div>
+        <div class="footer__links">
+          <a href="#" aria-label="Impressum">Impressum</a>
+          <a href="#" aria-label="Datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
