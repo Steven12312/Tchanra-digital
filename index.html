@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tchanra Digital – Websites & Betreuung</title>
-
   <meta name="description" content="Tchanra Digital erstellt moderne Websites für lokale Unternehmen – inklusive Betreuung, Updates und Support." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -23,85 +22,69 @@
         <span class="brand__text">Tchanra Digital</span>
       </a>
 
-      <nav class="nav" aria-label="Hauptnavigation">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav__toggleLine"></span>
-          <span class="nav__toggleLine"></span>
-          <span class="nav__toggleLine"></span>
-          <span class="sr-only">Menü öffnen</span>
-        </button>
+      <button class="navToggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menü öffnen</span>
+      </button>
 
-        <div class="nav__menu" id="navMenu">
-          <a href="#leistungen">Leistungen</a>
-          <a href="#ablauf">Ablauf</a>
-          <a href="#referenzen">Referenzen</a>
-          <a href="#about">Über mich</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
+      <nav class="nav" id="navMenu" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#about">Über mich</a>
+        <a href="#kontakt" class="navCta">Kontakt</a>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- Hero -->
-    <section class="hero" aria-label="Startbereich">
-      <!-- Video Background -->
+    <section class="hero">
       <div class="hero__videoWrap" aria-hidden="true">
-        <video
-          class="hero__video"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          poster="./assets/hero-poster.jpg"
-        >
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata">
           <source src="./assets/hero.mp4" type="video/mp4" />
         </video>
       </div>
+      <div class="hero__shade" aria-hidden="true"></div>
 
-      <!-- Overlay -->
-      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__card">
+          <div class="pill">Websites für lokale Unternehmen</div>
 
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <div class="badge">Websites für lokale Unternehmen</div>
-          <h1>Modern. Schnell. Zuverlässig.<br><span class="accent">Websites</span> mit Betreuung, die funktioniert.</h1>
+          <h1>
+            Modern. Schnell. Zuverlässig.<br>
+            <span class="accent">Websites</span> mit Betreuung, die funktioniert.
+          </h1>
+
           <p>
             Ich erstelle und betreue Webseiten für Dienstleister und kleine Unternehmen.
-            Fokus: klare Struktur, mobiloptimiert, schnelle Kontaktaufnahme – ohne Stress.
+            Klar strukturiert, mobiloptimiert, schnell erreichbar – ohne Stress.
           </p>
 
-          <div class="hero__cta">
+          <div class="hero__actions">
             <a class="btn btn--primary" href="#kontakt">Kostenloses Erstgespräch</a>
             <a class="btn btn--ghost" href="#referenzen">Referenz ansehen</a>
           </div>
 
-          <ul class="hero__points">
-            <li>✅ Mobiloptimiert & modern</li>
-            <li>✅ Updates, Backups & Support</li>
-            <li>✅ Klarer Fokus auf Anfragen</li>
-          </ul>
+          <div class="hero__bullets">
+            <div class="bullet">✅ Mobiloptimiert & modern</div>
+            <div class="bullet">✅ Updates, Backups & Support</div>
+            <div class="bullet">✅ Fokus auf Anfragen</div>
+          </div>
         </div>
 
-        <!-- Optional: rechte Seite als „Preview Card“ statt Video (Video ist ja schon Background) -->
-        <div class="hero__media" aria-label="Kurze Vorschau">
-          <div class="mediaCard">
-            <div class="mediaCard__content">
-              <div class="pill">Schnellstart</div>
-              <h3>In wenigen Tagen online</h3>
-              <p>Du bekommst eine klare Website, die Kunden schnell zu dir bringt – inkl. Betreuung.</p>
-
-              <div class="mediaCard__list">
-                <div class="miniLine"><span>✅</span><span>WhatsApp / Call-to-Action</span></div>
-                <div class="miniLine"><span>✅</span><span>SSL/HTTPS Setup</span></div>
-                <div class="miniLine"><span>✅</span><span>Updates & kleine Änderungen</span></div>
-              </div>
-
-              <p class="fine">
-                Datei fürs Video: <code>assets/hero.mp4</code> (Optional Poster: <code>assets/hero-poster.jpg</code>)
-              </p>
-            </div>
+        <div class="hero__mini">
+          <div class="miniStat">
+            <div class="miniStat__num">24–72h</div>
+            <div class="miniStat__text">Erste Version online</div>
+          </div>
+          <div class="miniStat">
+            <div class="miniStat__num">+WhatsApp</div>
+            <div class="miniStat__text">Schneller Kontakt</div>
+          </div>
+          <div class="miniStat">
+            <div class="miniStat__num">Betreuung</div>
+            <div class="miniStat__text">Updates & Änderungen</div>
           </div>
         </div>
       </div>
@@ -110,39 +93,39 @@
     <!-- Leistungen -->
     <section class="section" id="leistungen">
       <div class="container">
-        <div class="section__head">
+        <div class="sectionHead">
           <h2>Leistungen</h2>
           <p>Alles, was du brauchst – ohne Chaos. Sauber umgesetzt und verständlich betreut.</p>
         </div>
 
-        <div class="cards">
+        <div class="grid4">
           <article class="card">
             <h3>Website-Erstellung</h3>
             <p>Moderne Website, mobiloptimiert, klar strukturiert – passend zu deinem Business.</p>
             <ul>
               <li>Startseite + Unterseiten</li>
-              <li>Text-/Bild-Einbindung</li>
-              <li>Call-to-Action (Anruf/WhatsApp)</li>
+              <li>Texte & Bilder</li>
+              <li>Call-to-Action</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>Technik & Einrichtung</h3>
-            <p>Domain, Hosting, SSL, E-Mail – ich richte es sauber ein und erkläre es verständlich.</p>
+            <p>Domain, Hosting, SSL, E-Mail – ich richte es sauber ein und erkläre es einfach.</p>
             <ul>
-              <li>SSL/HTTPS aktivieren</li>
+              <li>HTTPS/SSL</li>
               <li>Performance-Basics</li>
-              <li>Datenschutz-Hinweise einpflegen</li>
+              <li>Datenschutz-Seiten</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>Wartung & Betreuung</h3>
-            <p>Damit es stabil bleibt: Updates, Backups, kleine Änderungen und schneller Support.</p>
+            <p>Updates, Backups und kleine Änderungen – damit alles stabil bleibt.</p>
             <ul>
               <li>Updates & Sicherheit</li>
               <li>Backups</li>
-              <li>Änderungen nach Bedarf</li>
+              <li>Fixes & Änderungen</li>
             </ul>
           </article>
 
@@ -162,7 +145,7 @@
     <!-- Ablauf -->
     <section class="section section--alt" id="ablauf">
       <div class="container">
-        <div class="section__head">
+        <div class="sectionHead">
           <h2>So läuft’s ab</h2>
           <p>Ein klarer Prozess – damit du schnell online bist.</p>
         </div>
@@ -180,7 +163,7 @@
             <div class="step__num">2</div>
             <div>
               <h3>Umsetzung</h3>
-              <p>Design, Texte, Struktur, Technik – ich baue die Website sauber auf.</p>
+              <p>Design, Struktur, Technik – ich baue die Website sauber auf.</p>
             </div>
           </div>
 
@@ -188,7 +171,7 @@
             <div class="step__num">3</div>
             <div>
               <h3>Live & Betreuung</h3>
-              <p>Website geht online. Danach Pflege/Updates/Änderungen – zuverlässig.</p>
+              <p>Website geht online. Danach Updates/Änderungen – zuverlässig.</p>
             </div>
           </div>
         </div>
@@ -198,7 +181,7 @@
     <!-- Referenzen -->
     <section class="section" id="referenzen">
       <div class="container">
-        <div class="section__head">
+        <div class="sectionHead">
           <h2>Referenzen</h2>
           <p>Ein Beispielprojekt – so sieht meine Arbeit aus.</p>
         </div>
@@ -208,12 +191,10 @@
             <img src="./assets/taxi-tchanra.jpg" alt="Screenshot – Taxi Tchanra Website" loading="lazy" decoding="async" />
           </div>
 
-          <div class="ref__content">
+          <div class="ref__box">
             <div class="pill">Projekt</div>
             <h3>Taxi Tchanra</h3>
-            <p>
-              Website für ein Taxiunternehmen – Fokus auf schnelle Kontaktaufnahme, klare Struktur und mobile Nutzung.
-            </p>
+            <p>Fokus: schnelle Kontaktaufnahme, klare Struktur, mobil optimiert.</p>
 
             <div class="ref__grid">
               <div class="mini">
@@ -238,10 +219,6 @@
               <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Website öffnen</a>
               <a class="btn btn--ghost" href="#kontakt">Ähnliches Projekt anfragen</a>
             </div>
-
-            <p class="fine">
-              Hinweis: Wenn du den Screenshot noch nicht hast, lege ein Bild unter <code>assets/taxi-tchanra.jpg</code> ab.
-            </p>
           </div>
         </div>
       </div>
@@ -251,112 +228,7 @@
     <section class="section section--alt" id="about">
       <div class="container">
         <div class="about">
-          <div>
+          <div class="about__text">
             <h2>Über Tchanra Digital</h2>
             <p>
-              Ich helfe lokalen Unternehmen dabei, online professionell aufzutreten – ohne Technikstress.
-              Du bekommst eine saubere Website und einen festen Ansprechpartner für Betreuung & Updates.
-            </p>
-            <ul class="about__list">
-              <li>✅ Klar & ehrlich beraten</li>
-              <li>✅ Schnelle Umsetzung</li>
-              <li>✅ Fokus auf Ergebnisse (Anfragen)</li>
-            </ul>
-          </div>
-
-          <div class="about__box">
-            <h3>Für wen ist das?</h3>
-            <p>Ideal für:</p>
-            <ul>
-              <li>Taxi- & Fahrdienste</li>
-              <li>Gastronomie</li>
-              <li>Handwerk / lokale Dienstleister</li>
-              <li>Kleine Unternehmen</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontakt -->
-    <section class="section" id="kontakt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Kontakt</h2>
-          <p>Schreib kurz, was du brauchst. Ich melde mich schnell zurück.</p>
-        </div>
-
-        <div class="contact">
-          <form class="form" id="contactForm">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Dein Name" required />
-            </div>
-
-            <div class="field">
-              <label for="email">E-Mail</label>
-              <input id="email" name="email" type="email" placeholder="name@email.de" required />
-            </div>
-
-            <div class="field">
-              <label for="message">Nachricht</label>
-              <textarea id="message" name="message" rows="5" placeholder="Kurz erklären, was du brauchst…" required></textarea>
-            </div>
-
-            <button class="btn btn--primary" type="submit">Anfrage senden</button>
-            <p class="fine" id="formHint">
-              Das Formular öffnet eine E-Mail (mailto). Wenn du ein echtes Kontaktformular willst (ohne Mail-Programm),
-              sag Bescheid – dann baue ich dir eine einfache Lösung ein.
-            </p>
-          </form>
-
-          <div class="contact__box">
-            <h3>Direkt per WhatsApp</h3>
-            <p>Am schnellsten geht’s über WhatsApp.</p>
-
-            <a class="btn btn--ghost btn--full" id="waBtn"
-               href="https://wa.me/4915000000000?text=Hi%20Tchanra%20Digital%2C%20ich%20habe%20eine%20Anfrage."
-               target="_blank" rel="noopener">
-              WhatsApp öffnen
-            </a>
-
-            <div class="contact__mini">
-              <div class="miniLine">
-                <span>Telefon</span>
-                <a href="tel:+4915000000000">+49 150 00000000</a>
-              </div>
-              <div class="miniLine">
-                <span>E-Mail</span>
-                <a href="mailto:info@tchanra-digital.de">info@tchanra-digital.de</a>
-              </div>
-            </div>
-
-            <p class="fine">
-              Trage hier deine echte Nummer/E-Mail ein (oben im Code).
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Floating WhatsApp Button -->
-    <a class="floatWA"
-       href="https://wa.me/4915000000000?text=Hi%20Tchanra%20Digital%2C%20ich%20habe%20eine%20Anfrage."
-       target="_blank" rel="noopener" aria-label="WhatsApp öffnen">
-      WhatsApp
-    </a>
-
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div>© <span id="year"></span> Tchanra Digital</div>
-        <div class="footer__links">
-          <a href="#" aria-label="Impressum">Impressum</a>
-          <a href="#" aria-label="Datenschutz">Datenschutz</a>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <script src="./script.js"></script>
-</body>
-</html>
+              Ich helfe lokalen Unternehmen dabei, online professionel
