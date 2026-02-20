@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impressum | Tchanra Digital</title>
+  <meta name="robots" content="noindex, follow" />
+
+  <style>
+    :root{
+      --bg:#f6f8ff;
+      --text:#0f172a;
+      --muted:#475569;
+      --card:rgba(255,255,255,.88);
+      --shadow:0 18px 50px rgba(15,23,42,.10);
+      --accent:#3b82f6;
+      --accent2:#22c55e;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,var(--bg) 0%,#fff 45%,var(--bg) 100%);
+      line-height:1.7;
+    }
+    a{color:inherit}
+    .container{width:min(980px,92vw);margin:0 auto}
+
+    .header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(12px);
+      background:rgba(246,248,255,.72);
+      border-bottom:1px solid rgba(15,23,42,.08);
+    }
+    .header__inner{
+      height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px;
+    }
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .brand__mark{
+      width:40px;height:40px;border-radius:14px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff;font-weight:900;
+    }
+    .brand__text{font-weight:900;letter-spacing:-.01em}
+    .nav{display:flex;gap:12px;align-items:center}
+    .nav a{
+      text-decoration:none;
+      padding:10px 12px;border-radius:12px;
+      color:var(--muted);font-weight:800;
+    }
+    .nav a:hover{background:rgba(255,255,255,.85);color:var(--text)}
+
+    main{padding:44px 0 64px}
+    .pageCard{
+      background:var(--card);
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:22px;
+      box-shadow:var(--shadow);
+      padding:22px;
+    }
+    h1{margin:0 0 10px;font-size:clamp(28px,3.4vw,40px);letter-spacing:-.03em}
+    h2{margin:22px 0 8px;font-size:18px}
+    p{margin:0 0 12px;color:var(--muted)}
+    .pill{
+      display:inline-flex;
+      padding:8px 12px;border-radius:999px;
+      background:rgba(59,130,246,.10);
+      border:1px solid rgba(59,130,246,.20);
+      font-weight:900;color:var(--text);
+      margin-bottom:10px;
+    }
+    .kv{display:grid;gap:6px;margin-top:8px}
+    .kv div{color:var(--muted)}
+    .kv b{color:var(--text)}
+
+    .footer{
+      border-top:1px solid rgba(15,23,42,.06);
+      background:rgba(255,255,255,.60);
+      padding:22px 0 30px;
+    }
+    .footer__inner{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      color:var(--muted);font-weight:700;
+    }
+    .footer__links{display:flex;gap:14px}
+    .footer__links a:hover{color:var(--text)}
+    @media (max-width:640px){
+      .header__inner{height:66px}
+      .nav a{padding:8px 10px}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html" aria-label="Zur Startseite">
+        <span class="brand__mark">TD</span>
+        <span class="brand__text">Tchanra Digital</span>
+      </a>
+
+      <nav class="nav" aria-label="Rechtliches">
+        <a href="./datenschutz.html">Datenschutz</a>
+        <a href="./index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="pageCard">
+        <div class="pill">Impressum</div>
+        <h1>Impressum</h1>
+        <p>Angaben gemäß § 5 TMG.</p>
+
+        <h2>Diensteanbieter</h2>
+        <div class="kv">
+          <div><b>Sapna Tchanra</b> (Einzelunternehmen / Kleingewerbe)</div>
+          <div>Kurfürstenstraße 5</div>
+          <div>63452 Hanau</div>
+          <div>Deutschland</div>
+        </div>
+
+        <h2>Kontakt</h2>
+        <div class="kv">
+          <div><b>Telefon:</b> <a href="tel:+4917657039844">+49 176 57039844</a></div>
+          <div><b>E-Mail:</b> <a href="mailto:info@tchanra-digital.de">info@tchanra-digital.de</a></div>
+        </div>
+
+        <h2>Umsatzsteuer</h2>
+        <p>
+          Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: <b>nicht vorhanden / wird nicht geführt</b>.<br>
+          Hinweis: Sofern als Kleinunternehmerin nach § 19 UStG tätig, wird keine Umsatzsteuer ausgewiesen.
+        </p>
+
+        <h2>Haftung für Inhalte</h2>
+        <p>
+          Als Diensteanbieterin bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+          Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
+          zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+        </p>
+
+        <h2>Haftung für Links</h2>
+        <p>
+          Diese Website enthält ggf. Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe.
+          Deshalb kann ich für diese fremden Inhalte keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+          oder Betreiber verantwortlich.
+        </p>
+
+        <h2>Urheberrecht</h2>
+        <p>
+          Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+          Beiträge Dritter sind als solche gekennzeichnet, soweit möglich.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> Tchanra Digital</div>
+      <div class="footer__links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
